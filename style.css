@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    height: 100vh;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p, button{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.next-btn.disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.container-todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background: #fff;
+    width: 50%;
+    margin: 4rem auto;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.box h3{
+    padding: 1rem;
+}
+
+.title{
+    margin: 1rem 0;
+}
+
+.options{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.options .option{
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: .8rem;
+    border-radius: .5rem;
+    text-align: start;
+    width: 100%;
+    cursor: pointer;
+}
+
+.option.green{
+    background: #0fd20f59;
+    animation: ease-in-out 1;
+    color: #000;
+}
+
+.option.red{
+    background: #ff00004d;
+    animation: ease-in-out 1;
+
+    color: #000;
+}
+
+
+
+/* .options .option.green:hover{
+    background: transparent;
+}
+
+.options .option.red:hover{
+    background: transparent;
+} */
+
+.options .option:hover{
+    background: #000;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.next-btn{
+    margin-top: 1rem;
+    background: #6457C6;
+    color: #fff;
+    padding: .6rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
